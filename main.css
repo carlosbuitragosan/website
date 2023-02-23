@@ -1,0 +1,16 @@
+
+        /* ****  MAKING AN IMAGE CIRCULAR  **** */
+.logo-container {
+    /* first we make the img square. overflow hidden crops the img cutting the right side (in landscape) or the bottom (in portrait), so in our case we need to move the img to the left with a negative margin value. adjust by 25%, assuming the subject of the photo is centered. */
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo-img {
+    width: auto;
+    height: 100%;
+    margin-left: -15px;
+
+}
