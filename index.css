@@ -17,35 +17,35 @@ max-width: 100%;
       /* /////////////////////////////
       **** LOGO *****
       /////////////////////////// */
+
+.header {
+  background-color: #F9F871;
+}
+
 .logo__name{
   display: flex;
   align-items: center;
   margin-left: 3rem;
   font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 .logo__word {
+  position: relative;
+  text-shadow: .5px .5px 0px white, -0.5px -0.5px 0px white;
+  font-size: 2rem;
 }
 .logo__word_all {
   font-size: 3rem;
   color: #000000;
-  z-index: -2;
-
 }
 .logo__word_about {
-  position: relative;
   color: #6666e5;
-  z-index: -1;
-  font-size: 2rem;
   left: -1rem;
-  text-shadow: .5px .5px 0px white, -0.5px -0.5px 0px white;
 }
 
 .logo__word_me {
   font-family: 'Babylonica', cursive;
-  font-size: 2rem;
-  position: relative;
   left: -2rem;
-  text-shadow: .5px .5px 0px white, -0.5px -0.5px 0px white;
-  border-radius: 8px;
 }
