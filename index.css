@@ -3,9 +3,6 @@
 ////////////////////// */
 *, *:before, *:after {
     box-sizing: border-box;
-    font-family: 'Averia Sans Libre', cursive, sans-serif;
-    font-weight: 100;
-    letter-spacing: .1rem;
   }
   
 img {
@@ -19,6 +16,7 @@ max-width: 100%;
       /////////////////////////// */
 
 .header {
+  font-family: 'Averia Sans Libre', cursive;  
   background-color: #F9F871;
 }
 
@@ -48,4 +46,59 @@ max-width: 100%;
 .logo__word_me {
   font-family: 'Babylonica', cursive;
   left: -2rem;
+}
+
+
+
+
+      /* ////////////////////// 
+      ***** MAIN *******
+      /////////////////////// */
+
+main {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.intro-module {
+  display: flex;
+  flex-direction: column;
+  background: #F9F871;
+}
+.title {
+  font-size: 5.5rem;
+  background: #F9F871;
+  margin: 0;
+  padding: 3rem 0rem 3rem 1rem;
+  color: #246D7C;
+}
+
+.title__inner-word_color-var {
+  font-style: normal;
+  font-size: 3rem;
+  color: #000;
+}
+
+.intro__paragraph {
+  background-color: #F9F871;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem;
+  flex-shrink: 3;
+
+  
+}
+
+@media screen and (max-width: 450px) {
+
+  .title {
+    font-size: 4.5rem;
+  }
+  
+  .title__inner-word_color-var {
+    font-size: 2rem;
+  }
+  
+  .intro__paragraph {
+    flex-shrink: 3;
+  }
 }
