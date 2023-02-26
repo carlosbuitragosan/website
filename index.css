@@ -61,14 +61,15 @@ main {
 
 .intro-module {
   display: flex;
-  flex-direction: column;
   background: #F9F871;
+  flex-wrap: wrap;
 }
 .title {
   font-size: 5.5rem;
+  line-height: 4rem;
   background: #F9F871;
   margin: 0;
-  padding: 3rem 0rem 3rem 1rem;
+  padding: 3rem 0rem 5rem 1rem;
   color: #246D7C;
 }
 
@@ -76,22 +77,23 @@ main {
   font-style: normal;
   font-size: 3rem;
   color: #000;
+
 }
+
 
 .intro__paragraph {
   background-color: #F9F871;
   font-size: 1.2rem;
   margin: 0;
   padding: 1rem;
-  flex-shrink: 3;
-
-  
+  flex-basis: 60vw;
 }
 
 @media screen and (max-width: 450px) {
 
   .title {
     font-size: 4.5rem;
+    line-height: 3.2rem;
   }
   
   .title__inner-word_color-var {
@@ -99,6 +101,6 @@ main {
   }
   
   .intro__paragraph {
-    flex-shrink: 3;
+    flex-basis: 70vw;
   }
 }
