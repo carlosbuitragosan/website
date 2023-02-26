@@ -152,10 +152,13 @@ max-width: 100%;
 .review__author {
   font-weight: 400;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 .review__text {
   color: #F9F871;
   font-style: italic;
   font-weight: 200;
   font-size: 1.4rem;
+  margin-top: 0;
+  
 }
