@@ -20,16 +20,16 @@
 <body>
 
     <header class="header">
-        <h1 class="logo__name">
-            <span class="logo__word logo__word_all">All</span><span class="logo__word logo__word_about">about</span><span class="logo__word logo__word_me">Me</span>
+        <h1 class="logo">
+            <span class="logo__text_all-about-me logo__all">All</span><span class="logo__text_all-about-me logo__about">about</span><span class="logo__text_all-about-me logo__me">Me</span>
         </h1>
     </header>
 
-    <main class="all-modules">
-        <div class="module intro-module">
+    <main class="modules__all">
+        <div class="module module__intro">
             
             <h1 class="title intro__title">
-                Born <i class="title__inner-word_color-var">abroad,</i> <br> & <br> Bred <i class="title__inner-word_color-var">globally.</i>
+                Born <i class="intro__title_abroad-globally">abroad,</i> <br> and <br> Bred <i class="intro__title_abroad-globally">globally.</i>
             </h1>
 
             <p class="paragraph intro__paragraph">
@@ -37,34 +37,29 @@
             </p>
         </div>
 
-        <div class="module studio__module">
+        <div class="module module__studio">
 
             <div class="img-container studio__img_container">
                 <img class="img studio__img" src="img/yoga-studio.jpg">
             </div>
 
-            <h2 class="title studio__title">Owning a yoga studio in East London for 6 years was a very rewarding experience.</h2>
+            <h2 class="studio__title">Owning a yoga studio in East London for 6 years was a very rewarding experience.</h2>
 
             <div class="studio__reviews">
 
-                <h3 class="review__title">Some of our reviews:</h3>
+                <h3 class="review__title">REVIEWS</h3>
 
-                <h4 class="review__author">Furry Flowers Rescue</h4>
-                <p class="review__text">"Great teachers, blessed space, and amazingly low prices."</p>
+                <div class="reviews__container">
+                    <p class="review">"Great teachers, blessed space, and amazingly low prices." <span class="review__author">-Furry Flowers Rescue</span></p>
 
-                <h4 class="review__author">Aurelia S.</h4>
-                <p class="review__text">"This is  a small but charming yoga studio with a family-like atmosphere."</p>
+                    <p class="review">"This is  a small but charming yoga studio with a family-like atmosphere." <span class="review__author">-Aurelia S.</span></p>
 
-                <h4 class="review__author">Carolin Krüger</h4>
-                <p class="review__text">"This is my favourite Yoga Studio in London!"</p>
+                    <p class="review">"This is my favourite Yoga Studio in London!" <span class="review__author">-Carolin Krüger</span></p>
+                </div>
+
             </div>
-
-            
-
-            
-
         </div>
     </main>
-
+<script src="script.js"></script>
 </body>
 </html>
