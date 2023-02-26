@@ -3,6 +3,7 @@
 ////////////////////// */
 *, *:before, *:after {
     box-sizing: border-box;
+    color: #1b1a19;
   }
   
 img {
@@ -36,7 +37,6 @@ max-width: 100%;
 }
 .logo__word_all {
   font-size: 3rem;
-  color: #000000;
 }
 .logo__word_about {
   color: #6666e5;
@@ -55,10 +55,24 @@ max-width: 100%;
       ***** MAIN *******
       /////////////////////// */
 
-main {
+.all-modules {
   font-family: 'Source Sans Pro', sans-serif;
 }
+ 
+/* 
+@media screen and (min-width: 800px) {
+  .all-modules {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+} */
 
+
+
+      /* ///////////////////////////////
+        **** INTRO MODULE ***
+      /////////////////////////////// */
 .intro-module {
   display: flex;
   background: #F9F871;
@@ -67,17 +81,18 @@ main {
 .title {
   font-size: 5.5rem;
   line-height: 4rem;
-  background: #F9F871;
   margin: 0;
   padding: 3rem 0rem 5rem 1rem;
+}
+
+.intro__title {
+  background: #F9F871;
   color: #246D7C;
 }
 
 .title__inner-word_color-var {
   font-style: normal;
   font-size: 3rem;
-  color: #000;
-
 }
 
 
@@ -103,4 +118,44 @@ main {
   .intro__paragraph {
     flex-basis: 70vw;
   }
+}
+
+      /* /////////////////////////////////
+          **** STUDIO MODULE*****
+      ///////////////////////////////// */
+
+.studio__module {
+  display: flex;
+  flex-direction: column;
+  background-color: #246D7C;
+}
+.studio__title {
+  background-color: #246D7C;
+  font-size: 2.5rem;
+  line-height: 2.2rem;
+  flex-basis: 70vw;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.studio__img {
+  vertical-align: bottom; /* this removes an empty space at the bottom. display:block also works*/
+}
+
+.studio__reviews {
+  padding: 0 1rem;
+}
+
+.review__title {
+  margin: 0;
+}
+
+.review__author {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.review__text {
+  color: #F9F871;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1.4rem;
 }
