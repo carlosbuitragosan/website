@@ -200,11 +200,11 @@ max-width: 100%;
 
 .music__title {
   /* color: #DB5ACA; */
-  color: #6666E5;
+  color: #6666e5;
   display: inline-block;
   max-width: 70%;
 
-  text-shadow: .1px .1px 3px  black, -0.1px -0.1px 3px black;
+  text-shadow: 1px 1px 2px  #1b1a19, -1px -1px 2px #1b1a19;
 }
 
 .music__player {
@@ -213,11 +213,17 @@ max-width: 100%;
 }
 
 .player__button {
-  padding: 2rem 0;
-  margin: 3rem 3rem;
+  padding: 1.5rem 0;
+  margin: 2rem 3rem;
   background-color: #1b1a19a3;
   border: none;
   color: white;
   font-size: 2rem;
+  cursor: pointer;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
 
+.player__button:hover {
+  transform: scale(1.05);
 }
