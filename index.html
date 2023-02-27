@@ -7,7 +7,6 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
              <!-- **** FAVICON **** -->
     <link rel="apple-touch-icon" sizes="48x48" href="img/favicon48x48.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="img/favicon180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon16x16.png">
     <link rel="stylesheet" href="normalize.css">
@@ -68,10 +67,41 @@
 
             <div class="music__player">
 
-                <button class="player__button player__button1">&#9658 Song 1 </button>
-                <button class="player__button player__button2"> &#9658 Song 2</button>
-                <button class="player__button player__button3"> &#9658 Song 3</button>
-                <button class="player__button player__button4"> &#9658 Song 4</button>
+                <div class="player__audio">
+
+                    <audio class="audio audio__mbira">
+                        <source src="audio/Mbira.mp3" type="audio/mp3">
+                    </audio>
+
+                    <button class="player__button button__mbira">&#9658 THUMB PIANO</button>
+                </div>
+
+                <div class="player__audio">
+
+                    <audio class="audio audio__sa-dakri">
+                        <source src="audio/Sa-dakri.mp3" type="audio/mp3">
+                    </audio>
+
+                    <button class="player__button button__sa-dakri"> &#9658 CRETAN SONG</button>
+                </div>
+
+                <div class="player__audio">
+
+                    <audio class="audio audio__guitar">
+                        <source src="audio/guitar.mp3" type="audio/mp3">
+                    </audio>
+
+                    <button class="player__button button__guitar"> &#9658 GUITAR IMPRO</button>
+                </div>
+                
+                <div class="player__audio">
+
+                    <audio class="audio audio__chant">
+                        <source src="audio/chant.mp3" type="audio/mp3">
+                    </audio>
+
+                    <button class="player__button button__chant"> &#9658 INDIAN CHANT</button>
+                </div>
             </div>
         </div>
     </main>
