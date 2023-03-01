@@ -29,22 +29,69 @@
 
 //     /////////////////////////////////////////////////////////////////////////
 
-const audioData = [
-    ['mbira', {
+const audioData = {
+    'mbira': {
         url : 'audio/Mbira.mp3',
         name: 'thumb piano'
-    }],
-    ['cretan', {
+    },
+    'cretan': {
         url: 'audio/Sa-dakri.mp3',
         name: 'cretan song'
-    }],
-    ['guitar', {
+    },
+    'guitar': {
         url: 'audio/guitar.mp3',
         name: 'guitar impro'
-    }],
-    ['chant', {
+    },
+    'chant': {
         url: 'audio/chant.mp3',
         name: 'indian chant'
-    }]
-];
-console.log(audioData[0])
+    }
+};
+
+
+const musicPlayer = document.querySelector('.music__player');
+const audioDataArray = Object.entries(audioData);
+
+audioDataArray.forEach(track => {
+    musicPlayer.insertAdjacentHTML('beforeend', 
+
+    `<div class="player__audio">
+
+        <button class="${track[0]}">&#9658 &nbsp ${track[1].name.toUpperCase()}</button>
+
+        <audio id="${track[0]}" class="audio audio__${track[0]}">
+            <source src="${track[1].url}" type="audio/mp3">
+        </audio>
+    </div>`)
+});
+
+let count = 0;
+
+const playPause = (song, object) => {
+    console.log(object.name)
+    let track = document.querySelector(`#${song}`);
+    let button = document.querySelector(`.${song}`);
+    console.log(button)
+
+    if (count === 0) {
+        count = 1;
+        track.play();
+        button.innerHTML = `| | &nbsp ${object.name.toUpperCase()}`;
+    } 
+    else {
+        count = 0;
+        track.pause();
+        button.innerHTML = `&#9658 &nbsp ${object.name.toUpperCase()}`;
+    };
+};
+
+const buttons = document.querySelectorAll('.mbira, .guitar, .chant, .cretan');
+
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        let data = button.classList.value;
+        playPause(data, audioData[data]);
+    })
+})
+

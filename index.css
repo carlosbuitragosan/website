@@ -115,22 +115,7 @@ max-width: 100%;
   flex-basis: 60vw;
 }
 
-@media screen and (max-width: 450px) {
 
-  .intro__title {
-    font-size: 4.5rem;
-    line-height: 3.2rem;
-  }
-  
-  .intro__title_abroad-globally {
-    font-size: 2rem;
-  }
-  
-  .intro__paragraph {
-    flex-basis: 70vw;
-  }
-
-}
 
       /* /////////////////////////////////
           **** STUDIO MODULE*****
@@ -182,12 +167,7 @@ max-width: 100%;
   font-weight: 400;
 }
 
-@media screen and (max-width: 600px) {
-  .studio__title {
-    font-size: 2rem;
-    max-width: 70vw;
-  }
-}
+
 
       /* //////////////////////////////////
         **** MUSIC MODULE ****
@@ -207,7 +187,7 @@ max-width: 100%;
   display: inline-block;
   max-width: 50%;
 
-  text-shadow: 1px 1px 2px  #1b1a19, -1px -1px 2px #1b1a19;
+  text-shadow: 1px 1px   #1b1a19, -1px -1px  #1b1a19;
 }
 
 .music__player {
@@ -215,11 +195,11 @@ max-width: 100%;
   flex-direction: column;
   align-items: center;
 }
-.audio {
-  flex-shrink: 1;
-}
 
-.player__button {
+.mbira, 
+.guitar, 
+.chant, 
+.cretan {
   /* font-family: 'Averia Sans Libre', cursive;   */
   padding: 1.5rem 3rem;
   margin: 2rem 1rem;
@@ -234,4 +214,42 @@ max-width: 100%;
 
 .player__button:hover {
   transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+
+  .intro__title {
+    font-size: 4.5rem;
+    line-height: 3.2rem;
+  }
+  
+  .intro__title_abroad-globally {
+    font-size: 2rem;
+  }
+  
+  .intro__paragraph {
+    flex-basis: 70vw;
+  }
+
+  .music__title {
+    max-width: 60%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .studio__title {
+    font-size: 2rem;
+    max-width: 70vw;
+  }
 }
