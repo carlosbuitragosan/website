@@ -129,6 +129,7 @@ max-width: 100%;
   .intro__paragraph {
     flex-basis: 70vw;
   }
+
 }
 
       /* /////////////////////////////////
@@ -146,7 +147,7 @@ max-width: 100%;
 .title__big {
   display: inline-block;
   max-width: 60vw;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0;
   padding: 1rem;
 }
@@ -194,8 +195,10 @@ max-width: 100%;
 
 .module__music {
   background: url(img/carlos.jpg);
+  background-color: #FF659D;
   background-size: cover;
   background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
 }
 
 .music__title {
@@ -217,12 +220,12 @@ max-width: 100%;
 }
 
 .player__button {
-  font-family: 'Averia Sans Libre', cursive;  
-  padding: 1.5rem 6rem;
-  margin: 2rem 3rem;
+  /* font-family: 'Averia Sans Libre', cursive;   */
+  padding: 1.5rem 3rem;
+  margin: 2rem 1rem;
   background-color: #1b1a19d7;
   border: none;
-  color: #FF9172;
+  color: #F3ECFF;
   font-size: 1.5rem;
   cursor: pointer;
   transform: translateZ(0);
