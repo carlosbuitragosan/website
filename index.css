@@ -207,6 +207,10 @@ max-width: 100%;
   transition: transform 0.25s ease-out;
 }
 
+.button__active {
+  background-color: #F9F871;
+  color: #1b1a19;
+}
 .player__button:hover {
   transform: scale(1.05);
 }

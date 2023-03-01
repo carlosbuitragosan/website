@@ -52,6 +52,7 @@ const audioData = {
 const musicPlayer = document.querySelector('.music__player');
 const audioDataArray = Object.entries(audioData);
 
+
 audioDataArray.forEach(track => {
     musicPlayer.insertAdjacentHTML('beforeend', 
 
@@ -65,16 +66,18 @@ audioDataArray.forEach(track => {
     </div>`)
 });
 
+
+
 let count = 0;
 
 const playPause = (song, object) => {
-    console.log(object.name)
+    const allAudio = document.querySelectorAll('#mbira, #guitar, #chant, #cretan');
     let track = document.querySelector(`#${song}`);
     let button = document.querySelector(`.${song}`);
-    console.log(button)
 
     if (count === 0) {
         count = 1;
+        allAudio.forEach(track => track.pause());
         track.play();
         button.innerHTML = `| | &nbsp ${object.name.toUpperCase()}`;
     } 
