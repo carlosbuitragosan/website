@@ -182,12 +182,7 @@ max-width: 100%;
 }
 
 .music__title {
-  /* color: #DB5ACA; */
-  color: #6666e5;
-  display: inline-block;
   max-width: 50%;
-
-  text-shadow: 1px 1px   #1b1a19, -1px -1px  #1b1a19;
 }
 
 .music__player {
