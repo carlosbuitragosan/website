@@ -32,7 +32,9 @@ audioDataArray.forEach(track => {
 
     `<div class="player__audio">
 
-        <button class="${track[0]}">&#9658 &nbsp ${track[1].name.toUpperCase()} </button>
+        <button class="${track[0]}">
+            <ion-icon name="play-circle-outline"></ion-icon> &nbsp ${track[1].name.toUpperCase()} 
+        </button>
 
         <audio id="${track[0]}" class="audio audio__${track[0]}">
             <source src="${track[1].url}" type="audio/mp3">
@@ -52,12 +54,12 @@ const playPause = (song, object) => {
     if (count === 0) {
         count = 1;
         track.play();
-        button.innerHTML = `| | &nbsp ${object.name.toUpperCase()}`;
+        button.innerHTML = `<ion-icon name="pause-circle-outline"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
     } 
     else {
         count = 0;
         track.pause();
-        button.innerHTML = `&#9658 &nbsp ${object.name.toUpperCase()}`;
+        button.innerHTML = `<ion-icon name="play-circle-outline"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
     };
 };
 
