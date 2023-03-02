@@ -191,10 +191,7 @@ max-width: 100%;
   align-items: center;
 }
 
-.mbira, 
-.guitar, 
-.chant, 
-.cretan {
+.audio__button {
   /* font-family: 'Averia Sans Libre', cursive;   */
   padding: 1.5rem 3rem;
   margin: 2rem 1rem;
