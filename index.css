@@ -191,7 +191,7 @@ max-width: 100%;
   align-items: center;
 }
 
-.audio__button {
+.mbira, .guitar, .chant, .cretan {
   /* font-family: 'Averia Sans Libre', cursive;   */
   padding: 1.5rem 3rem;
   margin: 2rem 1rem;
@@ -211,12 +211,6 @@ max-width: 100%;
 .player__button:hover {
   transform: scale(1.05);
 }
-
-
-
-
-
-
 
 
 @media screen and (max-width: 450px) {
