@@ -75,7 +75,9 @@ buttons.forEach(button => {
 
 allAudio.forEach(track => {
     track.addEventListener('ended', () => {
-        console.log(track)
+        console.log(track.id.value)
+        // let button = document.querySelector(`${track.id.value} + button`);
+        // console.log(button);
         track.pause();
     });
 });
@@ -83,9 +85,21 @@ allAudio.forEach(track => {
 
 
 
+                ///////////////////////////////////////
+                        // *** CODING SECTION ***
+                ///////////////////////////////////////
 
+const codingQuestions = [...document.querySelectorAll('.coding__question')];
+const codingAnswers = [...document.querySelectorAll('.coding__answer')];
 
+codingQuestions.forEach(question => {
+    const questionClass = question.classList.value.split(' ').splice(1).toString();
+    const answer = document.querySelector(`.${questionClass} + p`);
 
-
-
+    question.addEventListener('click', () => {
+        const activeAnswer = document.querySelector('.coding__answer_show');
+        activeAnswer.classList.remove('coding__answer_show');
+        answer.classList.toggle('coding__answer_show');
+    })
+})
 

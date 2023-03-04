@@ -202,15 +202,15 @@ max-width: 100%;
   cursor: pointer;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
-  display: flex;
+  display: flex; /* so that the icon and the text are centered */
   align-items: center;
 }
 
-.button__active {
+/* .button__active {
   background-color: #F9F871;
   color: #1b1a19;
-}
-.player__button:hover {
+} */
+.mbira:hover, .guitar:hover, .chant:hover, .cretan:hover {
   transform: scale(1.05);
 }
 
@@ -219,6 +219,44 @@ ion-icon {
   font-size: 3rem;
   
 }
+.music__side-note {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0;
+  padding: 0 0 2rem 1rem;
+}
+
+        /* ///////////////////////////////////////////////
+              **** MODULE CODING *****
+        /////////////////////////////////////////////// */
+
+.module__coding {
+  background-color: #56BB91;
+  min-height: 600px;
+}
+
+.qa__container {
+  padding: 1rem;
+}
+.coding__answer {
+  display: none;
+}
+.coding__answer_show {
+  display: initial;
+}
+
+.blinking-dot {
+  animation: blink 1s linear infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: .5;
+  }
+}
+
 
 
 @media screen and (max-width: 450px) {
