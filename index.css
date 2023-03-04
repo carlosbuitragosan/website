@@ -238,11 +238,23 @@ ion-icon {
 .qa__container {
   padding: 1rem;
 }
+
+.coding__question {
+  cursor: pointer;
+  background-color: #1b1a19ee;
+  color: #56BB91;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: .4rem;
+}
 .coding__answer {
   display: none;
+  
 }
 .coding__answer_show {
   display: initial;
+  font-size: 1.5rem;  
 }
 
 .blinking-dot {
