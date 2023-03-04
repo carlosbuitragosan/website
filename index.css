@@ -109,7 +109,7 @@ max-width: 100%;
 
 .intro__paragraph {
   background-color: #F9F871;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
   padding: 1rem;
   flex-basis: 60vw;
@@ -190,11 +190,13 @@ max-width: 100%;
   flex-direction: column;
   align-items: center;
 }
-
+.player__audio {
+  display: flex;
+}
 .mbira, .guitar, .chant, .cretan {
-  /* font-family: 'Averia Sans Libre', cursive;   */
   padding: 1.5rem 3rem;
   margin: 2rem 1rem;
+  border-radius: 8px;
   background-color: #1b1a19d7;
   border: none;
   color: #F3ECFF;
@@ -204,6 +206,7 @@ max-width: 100%;
   transition: transform 0.25s ease-out;
   display: flex; /* so that the icon and the text are centered */
   align-items: center;
+
 }
 
 /* .button__active {
@@ -221,7 +224,6 @@ ion-icon {
 }
 .music__side-note {
   font-size: 1.5rem;
-  font-style: italic;
   margin: 0;
   padding: 0 0 2rem 1rem;
 }
@@ -238,15 +240,20 @@ ion-icon {
 .qa__container {
   padding: 1rem;
 }
-
+.coding__title_code, .coding__title_code span{
+  color:#F9F871;
+  font-weight: 100;
+  font-size: 2rem;
+}
 .coding__question {
   cursor: pointer;
   background-color: #1b1a19ee;
   color: #56BB91;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: .4rem;
+  margin-top: 2.5rem;
 }
 .coding__answer {
   display: none;
@@ -254,7 +261,8 @@ ion-icon {
 }
 .coding__answer_show {
   display: initial;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
+  color: #1b1a19;
 }
 
 .blinking-dot {
