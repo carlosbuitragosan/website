@@ -54,12 +54,12 @@ const playPause = (song, object) => {
     if (count === 0) {
         count = 1;
         track.play();
-        button.innerHTML = `<ion-icon name="pause-circle-outline"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
+        button.innerHTML = `<ion-icon name="pause"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
     } 
     else {
         count = 0;
         track.pause();
-        button.innerHTML = `<ion-icon name="play-circle-outline"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
+        button.innerHTML = `<ion-icon name="play"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
     };
 };
 
@@ -97,9 +97,6 @@ codingQuestions.forEach(question => {
     const answer = document.querySelector(`.${questionClass} + p`);
 
     question.addEventListener('click', () => {
-        const activeAnswer = document.querySelector('.coding__answer_show');
-        activeAnswer.classList.remove('coding__answer_show');
         answer.classList.toggle('coding__answer_show');
-    })
-})
-
+    });
+});

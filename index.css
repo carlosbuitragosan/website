@@ -150,12 +150,10 @@ max-width: 100%;
 .review__title {
   padding: .5rem;
   margin-bottom: 2rem;
-
 }
 
 .review {
   color: #F9F871;
-  font-style: italic;
   font-weight: 200;
   font-size: 1.4rem;
   margin-top: 0;
@@ -169,10 +167,13 @@ max-width: 100%;
 
 
 
+
+
+
+
       /* //////////////////////////////////
         **** MUSIC MODULE ****
       ////////////////////////////////// */
-
 .module__music {
   background: url(img/carlos.jpg);
   background-color: #FF659D;
@@ -190,10 +191,15 @@ max-width: 100%;
   flex-direction: column;
   align-items: center;
 }
+
 .player__audio {
   display: flex;
 }
+
 .mbira, .guitar, .chant, .cretan {
+  display: flex; /* so that the icon and the text are centered */
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
   padding: 1.5rem 3rem;
   margin: 2rem 1rem;
   border-radius: 8px;
@@ -202,17 +208,9 @@ max-width: 100%;
   color: #F3ECFF;
   font-size: 1.5rem;
   cursor: pointer;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out;
-  display: flex; /* so that the icon and the text are centered */
   align-items: center;
-
 }
 
-/* .button__active {
-  background-color: #F9F871;
-  color: #1b1a19;
-} */
 .mbira:hover, .guitar:hover, .chant:hover, .cretan:hover {
   transform: scale(1.05);
 }
@@ -227,6 +225,12 @@ ion-icon {
   margin: 0;
   padding: 0 0 2rem 1rem;
 }
+
+
+
+
+
+
 
         /* ///////////////////////////////////////////////
               **** MODULE CODING *****
@@ -245,6 +249,7 @@ ion-icon {
   font-weight: 100;
   font-size: 2rem;
 }
+
 .coding__question {
   cursor: pointer;
   background-color: #1b1a19ee;
@@ -254,11 +259,26 @@ ion-icon {
   border-radius: 8px;
   margin-bottom: .4rem;
   margin-top: 2.5rem;
+  text-align: start;
+  border: none;
 }
+
+.qa__read-more {
+  color: #F9F871;
+  text-decoration-line: underline;
+  font-style: normal;
+  font-weight: 100;
+  font-size: .8em;
+}
+
+.qa__read-more:visited {
+  color: #b3b0ad;
+}
+
 .coding__answer {
   display: none;
-  
 }
+
 .coding__answer_show {
   display: initial;
   font-size: 1.5rem;
