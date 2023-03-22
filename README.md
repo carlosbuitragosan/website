@@ -1,4 +1,4 @@
-# Website
+# Website Project
 
 This project was created as part of an application for a developer's course with [Founders and Coders](https://www.foundersandcoders.com/).
 
