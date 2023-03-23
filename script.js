@@ -43,7 +43,9 @@ audioDataArray.forEach(track => {
 });
 
 
-const allAudio = document.querySelectorAll('#mbira, #guitar, #chant, #cretan');
+
+
+////////////////////// *** PLAY FUNCTION *** /////////////////////
 let count = 0;
 
 const playPause = (song, object) => {
@@ -54,17 +56,22 @@ const playPause = (song, object) => {
     if (count === 0) {
         count = 1;
         track.play();
-        button.innerHTML = `<ion-icon name="pause"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
+        button.innerHTML = `<ion-icon name="pause-circle-outline"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
     } 
     else {
         count = 0;
         track.pause();
-        button.innerHTML = `<ion-icon name="play"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
+        button.innerHTML = `<ion-icon name="play-circle-outline"></ion-icon> &nbsp ${object.name.toUpperCase()}`;
     };
 };
+///////////
 
+
+
+
+
+/////////////// *** PLAY ON CLICK EVENT *** /////////////////////////
 const buttons = document.querySelectorAll('.mbira, .guitar, .chant, .cretan');
-
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -72,13 +79,19 @@ buttons.forEach(button => {
         playPause(data, audioData[data]);
     });
 });
+/////////
+
+
+const allAudio = document.querySelectorAll('#mbira, #guitar, #chant, #cretan');
 
 allAudio.forEach(track => {
     track.addEventListener('ended', () => {
-        console.log(track.id.value)
-        // let button = document.querySelector(`${track.id.value} + button`);
-        // console.log(button);
+        count = 0;
         track.pause();
+        let trackName = track.classList.value.split(' ')[1].substring(7);
+        let trackButton = document.querySelector(`.${trackName}`);
+        trackButton.innerHTML = `<ion-icon name="play-circle-outline"></ion-icon> &nbsp ${audioData[`${trackName}`].name.toUpperCase()}`
+       
     });
 });
 

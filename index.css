@@ -63,22 +63,26 @@ max-width: 100%;
  
 
 @media screen and (min-width: 980px) {
-  .modules__all {
+  .modules__all { 
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .module__intro {
+  .module__intro { /* top left */
     grid-row: 1;
     grid-column: 1;
   }
-  .module__studio {
+  .module__studio { /* top right */
     grid-row: 1;
     grid-column: 2;
   }
-  .module__music {
+  .module__music { /* bottom left */
     grid-row: 2;
     grid-column: 1;
+  }
+  .module__coding { /* bottom right */
+    grid-row: 2;
+    grid-column: 2;
   }
 } 
 
@@ -261,7 +265,7 @@ ion-icon {
 }
 
 .coding__question {
-  /* display: block; */
+  display: block;
   cursor: pointer;
   background-color: #1b1a19ee;
   color: #56BB91;
