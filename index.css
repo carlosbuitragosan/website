@@ -292,12 +292,12 @@ ion-icon {
 
 .coding__answer {
   display: none;
+  font-size: 1.5rem;
+  color: #1b1a19;
 }
 
 .coding__answer_show {
   display: initial;
-  font-size: 1.5rem;
-  color: #1b1a19;
 }
 
 .blinking-dot {
