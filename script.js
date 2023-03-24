@@ -22,7 +22,7 @@ const audioData = {
     }
 };
 
-
+////////////////// *** BUTTONS HTML *** ////////////////////////
 const musicPlayer = document.querySelector('.music__player');
 const audioDataArray = Object.entries(audioData);
 
@@ -41,7 +41,7 @@ audioDataArray.forEach(track => {
         </audio>
     </div>`)
 });
-
+////////////
 
 
 
@@ -82,28 +82,26 @@ buttons.forEach(button => {
 /////////
 
 
+
+
+//////////////// *** RESET BUTTON AFTER SONG ENDS *** ///////////////////////////
 const allAudio = document.querySelectorAll('#mbira, #guitar, #chant, #cretan');
 
 allAudio.forEach(track => {
     track.addEventListener('ended', () => {
         count = 0;
-        track.pause();
         let trackName = track.classList.value.split(' ')[1].substring(7);
         let trackButton = document.querySelector(`.${trackName}`);
         trackButton.innerHTML = `<ion-icon name="play-circle-outline"></ion-icon> &nbsp ${audioData[`${trackName}`].name.toUpperCase()}`
-       
     });
 });
+////////
 
 
 
 
-                ///////////////////////////////////////
-                        // *** CODING SECTION ***
-                ///////////////////////////////////////
-
+//////////////////// *** Q&A SECTION *** ////////////////////////////////
 const codingQuestions = [...document.querySelectorAll('.coding__question')];
-const codingAnswers = [...document.querySelectorAll('.coding__answer')];
 
 codingQuestions.forEach(question => {
     const questionClass = question.classList.value.split(' ').splice(1).toString();
@@ -113,3 +111,4 @@ codingQuestions.forEach(question => {
         answer.classList.toggle('coding__answer_show');
     });
 });
+////////////
